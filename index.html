@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore 小小探索家夏令營教師手冊 — 台南五大目的地完整帶隊指南" />
+  <title>Explore 小小探索家教師手冊</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════════
+     頂部導覽列
+══════════════════════════════════════════════════════════ -->
+<header class="topbar" role="banner">
+  <a class="topbar-logo" href="#" role="heading" aria-level="1">
+    <div class="topbar-logo-icon" aria-hidden="true">🧭</div>
+    <span>Explore 教師手冊</span>
+  </a>
+  <div class="topbar-actions">
+    <button class="theme-toggle" aria-label="切換深色/淺色模式">
+      <span>🌙</span><span>深色</span>
+    </button>
+    <button class="menu-toggle" aria-label="開啟選單" aria-expanded="false">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="17" y2="6"/>
+        <line x1="3" y1="10" x2="17" y2="10"/>
+        <line x1="3" y1="14" x2="17" y2="14"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════════════════════════
+     版面
+══════════════════════════════════════════════════════════ -->
+<div class="layout">
+
+  <!-- 側邊欄遮罩（手機） -->
+  <div class="sidebar-overlay" aria-hidden="true"></div>
+
+  <!-- ── 側邊欄 ─────────────────────────────────────────── -->
+  <nav class="sidebar" role="navigation" aria-label="主選單">
+
+    <!-- 一般頁面 -->
+    <div class="nav-section">
+      <div class="nav-section-label">總覽</div>
+      <button class="nav-item" data-page="home">
+        <span class="nav-item-icon">🏠</span>首頁
+      </button>
+      <button class="nav-item" data-page="philosophy">
+        <span class="nav-item-icon">💡</span>課程理念
+      </button>
+      <button class="nav-item" data-page="missions">
+        <span class="nav-item-icon">🎯</span>五大探索任務
+      </button>
+      <button class="nav-item" data-page="lab">
+        <span class="nav-item-icon">🔬</span>Explore Lab 學習單
+      </button>
+    </div>
+
+    <!-- 目的地 -->
+    <div class="nav-section">
+      <div class="nav-section-label">目的地手冊</div>
+      <button class="nav-item" data-page="chimei">
+        <span class="dest-dot" style="background:#E8A838"></span>
+        奇美博物館
+      </button>
+      <button class="nav-item" data-page="nanke">
+        <span class="dest-dot" style="background:#2EC4B6"></span>
+        南科考古館＋樹谷
+      </button>
+      <button class="nav-item" data-page="zuojhen">
+        <span class="dest-dot" style="background:#8B5CF6"></span>
+        左鎮化石園區
+      </button>
+      <button class="nav-item" data-page="hydrogel">
+        <span class="dest-dot" style="background:#06B6D4"></span>
+        虹泰水凝膠世界
+      </button>
+      <button class="nav-item" data-page="lego">
+        <span class="dest-dot" style="background:#EF4444"></span>
+        創意積木夢工場
+      </button>
+    </div>
+
+    <!-- 附錄 -->
+    <div class="nav-section">
+      <div class="nav-section-label">教師工具</div>
+      <button class="nav-item" data-page="safety">
+        <span class="nav-item-icon">🛡️</span>安全計畫
+      </button>
+      <button class="nav-item" data-page="planb">
+        <span class="nav-item-icon">🔄</span>Plan B 備案
+      </button>
+      <button class="nav-item" data-page="passport">
+        <span class="nav-item-icon">📖</span>探索護照
+      </button>
+    </div>
+
+  </nav>
+
+  <!-- ── 主內容區 ─────────────────────────────────────────── -->
+  <main class="main-content" role="main">
+
+    <!-- ════════════════════════════════════════════════════
+         首頁
+    ════════════════════════════════════════════════════ -->
+    <div class="page active" id="page-home">
+      <div class="page" style="display:block; padding: 40px 32px 80px; max-width: 900px;">
+
+        <!-- 英雄區 -->
+        <div class="hero animate-in">
+          <div class="hero-eyebrow">🧭 2025 夏令營教師手冊</div>
+          <h1>Explore<br>小小探索家</h1>
+          <p class="hero-desc">
+            不是老師帶孩子出去玩，<br>
+            而是透過公共運輸、自主規畫與探索活動，<br>
+            讓孩子理解整個旅程。
+          </p>
+        </div>
+
+        <!-- 核心精神 -->
+        <div class="callout teacher animate-in animate-in-delay-1">
+          <div class="callout-icon">👩‍🏫</div>
+          <div class="callout-body">
+            <div class="callout-title">給老師的一句話</div>
+            <div class="callout-content">
+              老師心中有答案，但不要急著告訴孩子答案。<br>
+              讓孩子自己查詢、討論、規畫——這就是 Explore 的核心。
+            </div>
+          </div>
+        </div>
+
+        <!-- 統計數字 -->
+        <div class="stats-row animate-in animate-in-delay-2">
+          <div class="stat-item">
+            <span class="stat-value">5</span>
+            <span class="stat-label">目的地</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">08:30</span>
+            <span class="stat-label">集合時間</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">16:30</span>
+            <span class="stat-label">返回時限</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">30-40</span>
+            <span class="stat-label">學生人數</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">4-6</span>
+            <span class="stat-label">帶隊老師</span>
+          </div>
+        </div>
+
+        <!-- 五大目的地卡片 -->
+        <div class="section-header animate-in animate-in-delay-3">
+          <div class="section-number">↓</div>
+          <h2>選擇目的地</h2>
+        </div>
+
+        <div class="card-grid animate-in animate-in-delay-4">
+
+          <div class="card" style="cursor:pointer;border-top:3px solid #E8A838"
+               onclick="Router.navigate('chimei')">
+            <div style="font-size:2rem;margin-bottom:12px">🏛️</div>
+            <h4>奇美博物館</h4>
+            <p class="text-sm text-muted" style="margin-top:8px">
+              台南最大綜合博物館，藝術、自然史、兵器、樂器四大館
+            </p>
+            <div style="margin-top:12px">
+              <span class="badge badge-yellow">台鐵區間車</span>
+              <span class="badge badge-outline" style="margin-left:4px">步行</span>
+            </div>
+          </div>
+
+          <div class="card" style="cursor:pointer;border-top:3px solid #2EC4B6"
+               onclick="Router.navigate('nanke')">
+            <div style="font-size:2rem;margin-bottom:12px">🏺</div>
+            <h4>南科考古館＋樹谷園區</h4>
+            <p class="text-sm text-muted" style="margin-top:8px">
+              台灣規模最大考古館，史前台灣生活全解密
+            </p>
+            <div style="margin-top:12px">
+              <span class="badge badge-teal">台鐵＋公車</span>
+            </div>
+          </div>
+
+          <div class="card" style="cursor:pointer;border-top:3px solid #8B5CF6"
+               onclick="Router.navigate('zuojhen')">
+            <div style="font-size:2rem;margin-bottom:12px">🦕</div>
+            <h4>左鎮化石園區</h4>
+            <p class="text-sm text-muted" style="margin-top:8px">
+              恐龍化石、左鎮人化石，台灣最古老人類遺跡
+            </p>
+            <div style="margin-top:12px">
+              <span class="badge badge-purple">台鐵＋公車</span>
+            </div>
+          </div>
+
+          <div class="card" style="cursor:pointer;border-top:3px solid #06B6D4"
+               onclick="Router.navigate('hydrogel')">
+            <div style="font-size:2rem;margin-bottom:12px">💧</div>
+            <h4>虹泰水凝膠世界</h4>
+            <p class="text-sm text-muted" style="margin-top:8px">
+              科學感十足的觀光工廠，DIY 水凝膠體驗
+            </p>
+            <div style="margin-top:12px">
+              <span class="badge badge-teal">公車直達</span>
+            </div>
+          </div>
+
+          <div class="card" style="cursor:pointer;border-top:3px solid #EF4444"
+               onclick="Router.navigate('lego')">
+            <div style="font-size:2rem;margin-bottom:12px">🧱</div>
+            <h4>創意積木夢工場</h4>
+            <p class="text-sm text-muted" style="margin-top:8px">
+              大型積木互動體驗，激發空間與創意思考
+            </p>
+            <div style="margin-top:12px">
+              <span class="badge badge-red">公車直達</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 交通原則提醒 -->
+        <div class="callout warning animate-in">
+          <div class="callout-icon">🚌</div>
+          <div class="callout-body">
+            <div class="callout-title">交通原則（不可違反）</div>
+            <div class="callout-content">
+              優先順序：<strong>公車 → 台鐵 → 步行</strong><br>
+              <strong>禁止使用：</strong>遊覽車、計程車、Uber
+            </div>
+          </div>
+        </div>
+
+        <!-- 出發地說明 -->
+        <div class="card card-bordered accent" style="margin-top:24px">
+          <h4 style="margin-bottom:8px">📍 集合地點</h4>
+          <p class="text-sm text-muted">
+            台南市東區寶仁國小幼稚園門口<br>
+            08:30 集合 ／ 最晚 16:30 返回原地點
+          </p>
+        </div>
+
+        <div class="page-footer">
+          <p>《Explore 小小探索家教師手冊》｜台南市東區寶仁國小</p>
+          <p>本手冊依公共運輸為主軸設計，所有交通資訊請於出發前一週再次確認。</p>
+        </div>
+
+      </div>
+    </div><!-- /page-home -->
+
+
+    <!-- ════════════════════════════════════════════════════
+         課程理念
+    ════════════════════════════════════════════════════ -->
+    <div class="page" id="page-philosophy">
+      <!-- Step 4 填充 -->
+      <div class="breadcrumb"><span>課程理念</span></div>
+      <div class="hero">
+        <div class="hero-eyebrow">💡 Philosophy</div>
+        <h1>課程理念</h1>
+        <p class="hero-desc">Explore 夏令營的核心精神與設計原則</p>
+      </div>
+      <div class="callout info">
+        <div class="callout-icon">⏳</div>
+        <div class="callout-body">
+          <div class="callout-title">內容準備中</div>
+          <div class="callout-content">此頁面即將完成，請先瀏覽其他章節。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════
+         五大探索任務
+    ════════════════════════════════════════════════════ -->
+    <div class="page" id="page-missions">
+      <div class="breadcrumb"><span>五大探索任務</span></div>
+      <div class="hero">
+        <div class="hero-eyebrow">🎯 Missions</div>
+        <h1>五大探索任務</h1>
+        <p class="hero-desc">每個目的地對應的核心探索能力訓練</p>
+      </div>
+      <div class="callout info">
+        <div class="callout-icon">⏳</div>
+        <div class="callout-body">
+          <div class="callout-title">內容準備中</div>
+          <div class="callout-content">此頁面即將完成，請先瀏覽其他章節。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════
+         Explore Lab 學習單
+    ════════════════════════════════════════════════════ -->
+    <div class="page" id="page-lab">
+      <div class="breadcrumb"><span>Explore Lab 學習單</span></div>
+      <div class="hero">
+        <div class="hero-eyebrow">🔬 Explore Lab</div>
+        <h1>Explore Lab<br>學習單</h1>
+        <p class="hero-desc">出發前一週星期五，學生自主研究學習單</p>
+      </div>
+      <div class="callout info">
+        <div class="callout-icon">⏳</div>
+        <div class="callout-body">
+          <div class="callout-title">內容準備中</div>
+          <div class="callout-content">此頁面即將完成，請先瀏覽其他章節。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════
+         安全計畫
+    ════════════════════════════════════════════════════ -->
+    <div class="page" id="page-safety">
+      <div class="breadcrumb"><span>安全計畫</span></div>
+      <div class="hero">
+        <div class="hero-eyebrow">🛡️ Safety</div>
+        <h1>安全計畫</h1>
+        <p class="hero-desc">通用安全管理原則（適用所有目的地）</p>
+      </div>
+      <div class="callout info">
+        <div class="callout-icon">⏳</div>
+        <div class="callout-body">
+          <div class="callout-title">內容準備中</div>
+          <div class="callout-content">此頁面即將完成，請先瀏覽其他章節。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════
+         Plan B
+    ════════════════════════════════════════════════════ -->
+    <div class="page" id="page-planb">
+      <div class="breadcrumb"><span>Plan B</span></div>
+      <div class="hero">
+        <div class="hero-eyebrow">🔄 Plan B</div>
+        <h1>Plan B<br>應變手冊</h1>
+        <p class="hero-desc">通用應變流程（各目的地另有專屬 Plan B）</p>
+      </div>
+      <div class="callout info">
+        <div class="callout-icon">⏳</div>
+        <div class="callout-body">
+          <div class="callout-title">內容準備中</div>
+          <div class="callout-content">此頁面即將完成，請先瀏覽其他章節。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════
+         探索護照
+    ════════════════════════════════════════════════════ -->
+    <div class="page" id="page-passport">
+      <div class="breadcrumb"><span>探索護照</span></div>
+      <div class="hero">
+        <div class="hero-eyebrow">📖 Passport</div>
+        <h1>探索護照</h1>
+        <p class="hero-desc">集滿五個印章，成為正式小小探索家！</p>
+      </div>
+      <div class="callout info">
+        <div class="callout-icon">⏳</div>
+        <div class="callout-body">
+          <div class="callout-title">內容準備中</div>
+          <div class="callout-content">此頁面即將完成，請先瀏覽其他章節。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════
+         目的地 1：奇美博物館（骨架）
+    ════════════════════════════════════════════════════ -->
+    <div class="page" id="page-chimei">
+      <div class="breadcrumb">
+        <span>教師手冊</span>
+        <span class="breadcrumb-sep">›</span>
+        <span>奇美博物館</span>
+      </div>
+
+      <!-- 英雄 -->
+      <div class="dest-hero dest-chimei"
+           style="background:linear-gradient(135deg,#C8841A,#E8A838)">
+        <div style="color:rgba(255,255,255,.7);font-size:.85rem;font-weight:600;
+                    text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px">
+          目的地 01
+        </div>
+        <h1 style="color:#fff;font-size:clamp(1.6rem,4vw,2.4rem);margin-bottom:8px">
+          🏛️ 奇美博物館
+        </h1>
+        <p style="color:rgba(255,255,255,.85);font-size:1rem;max-width:500px;line-height:1.7">
+          台南規模最大的私人博物館，典藏藝術、自然史、兵器與樂器四大主題
+        </p>
+        <div class="dest-hero-meta">
+          <div class="dest-meta-chip">📍 台南市仁德區</div>
+          <div class="dest-meta-chip">🕐 08:30 – 16:30</div>
+          <div class="dest-meta-chip">🚌 公車＋步行</div>
+          <div class="dest-meta-chip">🎟️ 需查詢票價</div>
+        </div>
+      </div>
+
+      <div class="callout info">
+        <div class="callout-icon">⏳</div>
+        <div class="callout-body">
+          <div class="callout-title">內容填充中</div>
+          <div class="callout-content">奇美博物館完整手冊（行程表、交通、任務、Plan B）即將完成。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════
+         目的地 2：南科考古館（骨架）
+    ════════════════════════════════════════════════════ -->
+    <div class="page" id="page-nanke">
+      <div class="breadcrumb">
+        <span>教師手冊</span>
+        <span class="breadcrumb-sep">›</span>
+        <span>南科考古館＋樹谷園區</span>
+      </div>
+      <div class="dest-hero"
+           style="background:linear-gradient(135deg,#0E9488,#2EC4B6)">
+        <div style="color:rgba(255,255,255,.7);font-size:.85rem;font-weight:600;
+                    text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px">
+          目的地 02
+        </div>
+        <h1 style="color:#fff;font-size:clamp(1.6rem,4vw,2.4rem);margin-bottom:8px">
+          🏺 南科考古館＋樹谷園區
+        </h1>
+        <p style="color:rgba(255,255,255,.85);font-size:1rem;max-width:500px;line-height:1.7">
+          台灣最大考古博物館，帶孩子穿越五千年前的史前台灣
+        </p>
+        <div class="dest-hero-meta">
+          <div class="dest-meta-chip">📍 台南市新市區</div>
+          <div class="dest-meta-chip">🕐 08:30 – 16:30</div>
+          <div class="dest-meta-chip">🚆 台鐵＋公車</div>
+        </div>
+      </div>
+      <div class="callout info">
+        <div class="callout-icon">⏳</div>
+        <div class="callout-body">
+          <div class="callout-title">內容填充中</div>
+          <div class="callout-content">南科考古館完整手冊即將完成。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════
+         目的地 3：左鎮化石園區（骨架）
+    ════════════════════════════════════════════════════ -->
+    <div class="page" id="page-zuojhen">
+      <div class="breadcrumb">
+        <span>教師手冊</span>
+        <span class="breadcrumb-sep">›</span>
+        <span>左鎮化石園區</span>
+      </div>
+      <div class="dest-hero"
+           style="background:linear-gradient(135deg,#5B21B6,#8B5CF6)">
+        <div style="color:rgba(255,255,255,.7);font-size:.85rem;font-weight:600;
+                    text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px">
+          目的地 03
+        </div>
+        <h1 style="color:#fff;font-size:clamp(1.6rem,4vw,2.4rem);margin-bottom:8px">
+          🦕 左鎮化石園區
+        </h1>
+        <p style="color:rgba(255,255,255,.85);font-size:1rem;max-width:500px;line-height:1.7">
+          發現台灣最古老的人類遺跡，走進兩萬年前的左鎮人世界
+        </p>
+        <div class="dest-hero-meta">
+          <div class="dest-meta-chip">📍 台南市左鎮區</div>
+          <div class="dest-meta-chip">🕐 08:30 – 16:30</div>
+          <div class="dest-meta-chip">🚌 台鐵＋公車</div>
+        </div>
+      </div>
+      <div class="callout info">
+        <div class="callout-icon">⏳</div>
+        <div class="callout-body">
+          <div class="callout-title">內容填充中</div>
+          <div class="callout-content">左鎮化石園區完整手冊即將完成。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════
+         目的地 4：虹泰水凝膠（骨架）
+    ════════════════════════════════════════════════════ -->
+    <div class="page" id="page-hydrogel">
+      <div class="breadcrumb">
+        <span>教師手冊</span>
+        <span class="breadcrumb-sep">›</span>
+        <span>虹泰水凝膠世界觀光工廠</span>
+      </div>
+      <div class="dest-hero"
+           style="background:linear-gradient(135deg,#0369A1,#06B6D4)">
+        <div style="color:rgba(255,255,255,.7);font-size:.85rem;font-weight:600;
+                    text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px">
+          目的地 04
+        </div>
+        <h1 style="color:#fff;font-size:clamp(1.6rem,4vw,2.4rem);margin-bottom:8px">
+          💧 虹泰水凝膠世界
+        </h1>
+        <p style="color:rgba(255,255,255,.85);font-size:1rem;max-width:500px;line-height:1.7">
+          台灣唯一水凝膠主題觀光工廠，科學感十足的 DIY 體驗
+        </p>
+        <div class="dest-hero-meta">
+          <div class="dest-meta-chip">📍 台南市善化區</div>
+          <div class="dest-meta-chip">🕐 08:30 – 16:30</div>
+          <div class="dest-meta-chip">🚌 公車直達</div>
+        </div>
+      </div>
+      <div class="callout info">
+        <div class="callout-icon">⏳</div>
+        <div class="callout-body">
+          <div class="callout-title">內容填充中</div>
+          <div class="callout-content">虹泰水凝膠完整手冊即將完成。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════
+         目的地 5：創意積木夢工場（骨架）
+    ════════════════════════════════════════════════════ -->
+    <div class="page" id="page-lego">
+      <div class="breadcrumb">
+        <span>教師手冊</span>
+        <span class="breadcrumb-sep">›</span>
+        <span>創意積木夢工場</span>
+      </div>
+      <div class="dest-hero"
+           style="background:linear-gradient(135deg,#B91C1C,#EF4444)">
+        <div style="color:rgba(255,255,255,.7);font-size:.85rem;font-weight:600;
+                    text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px">
+          目的地 05
+        </div>
+        <h1 style="color:#fff;font-size:clamp(1.6rem,4vw,2.4rem);margin-bottom:8px">
+          🧱 創意積木夢工場
+        </h1>
+        <p style="color:rgba(255,255,255,.85);font-size:1rem;max-width:500px;line-height:1.7">
+          台灣最大積木互動體驗館，激發空間思維與創造力
+        </p>
+        <div class="dest-hero-meta">
+          <div class="dest-meta-chip">📍 台南市</div>
+          <div class="dest-meta-chip">🕐 08:30 – 16:30</div>
+          <div class="dest-meta-chip">🚌 公車直達</div>
+        </div>
+      </div>
+      <div class="callout info">
+        <div class="callout-icon">⏳</div>
+        <div class="callout-body">
+          <div class="callout-title">內容填充中</div>
+          <div class="callout-content">創意積木夢工場完整手冊即將完成。</div>
+        </div>
+      </div>
+    </div>
+
+  </main><!-- /main-content -->
+</div><!-- /layout -->
+
+<script src="script.js"></script>
+</body>
+</html>
